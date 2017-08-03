@@ -6,29 +6,39 @@
   // var index = sel[0].selectedIndex;
   // var value = sel[0].options[index].value;
 
-var query = document.getElementsByTagName("button")[1];
-query.addEventListener('click', Query, false);
+  var connect = document.getElementsByTagName("button")[0];
+  var query = document.getElementsByTagName("button")[1];
+  var send = document.getElementsByTagName("button")[2];
+
+  connect.addEventListener('click', Connect, false);
+
+  function Connect(){
+
+  	WebMidi.enable(function (err) {
+
+  		if (err) {
+  			console.log("WebMidi could not be enabled.", err);
+  		}
+  		console.log(WebMidi.sysexEnabled);
+
+  		query.addEventListener('click', Query, false);
+
+  		send.addEventListener('click', Send, false);
+
+  	},true);
+
+ }
+
+
+
+
+
+
+
+
 
 function Query(){
 
-
-
-// Enable WebMidi.js
-WebMidi.enable(function (err) {
-
-  if (err) {
-    console.log("WebMidi could not be enabled.", err);
-  }
-
-  // Viewing available inputs and outputs
-  // console.log(WebMidi.inputs);
-  // console.log(WebMidi.outputs);
-
-  // Display the current time
-  // console.log(WebMidi.time);
-  console.log(WebMidi.sysexEnabled);
-
-  // Retrieving an output port/device using its id, name or index
   var output = WebMidi.getOutputById("123456789");
   output = WebMidi.getOutputByName("Axiom Pro 25 Ext Out");
   output = WebMidi.outputs[0];
@@ -156,20 +166,16 @@ output.sendSysex([], [0x00,0x00,0x0e,0x52,0x5e,0x02,0x00,0x00]);
       };
 
       alert("Query finished!")
+    });
 
-
-
-    }
-  );
-
-},true);
+// },true);
 
 }
 // -------------------------------------------------------------------------
 
 
-var send = document.getElementsByTagName("button")[2];
-send.addEventListener('click', Send, false);
+
+
 
 
 function Send(){
@@ -180,11 +186,11 @@ query.removeEventListener('click', Query, false);
 console.log("working?");
 
 // Enable WebMidi.js
-WebMidi.enable(function (err) {
+// WebMidi.enable(function (err) {
 
-  if (err) {
-    console.log("WebMidi could not be enabled.", err);
-  }
+  // if (err) {
+  //   console.log("WebMidi could not be enabled.", err);
+  // }
 
   // Viewing available inputs and outputs
   // console.log(WebMidi.inputs);
@@ -204,7 +210,7 @@ console.log(JSON.stringify(output,null,4));
 // output.sendSysex([0x00, 0x20, 0x2B], [0x69,0x01, 0x02]);
 
 
-var stableArr = [0x00,0x00,0x0E,0x52,0x5E,0x01,0x01,0x06,0x00,0x50,0x72,0x65,0x73,0x65,0x74,0x30,0x32,0x4E,0x61,0x6D,0x65,0x20,0x20,0x20,0x20];
+var stableArr = [0x52,0x5E,0x01,0x01,0x06,0x00,0x50,0x72,0x65,0x73,0x65,0x74,0x30,0x32,0x4E,0x61,0x6D,0x65,0x20,0x20,0x20,0x20];
 
 for (var i=0; i<selects.length; i++) {
 
@@ -216,8 +222,8 @@ for (var i=0; i<selects.length; i++) {
 
 console.log(stableArr);
 
-output.sendSysex([0x00,0x00,0x0E], [0x00,0x00,0x0E]);
-output.sendSysex([], stableArr);
+output.sendSysex([0x00,0x00,0x0E], [0x52,0x5E,0x00,0x00,0x04,0x00,0x01,0x02,0x03]);
+output.sendSysex([0x00,0x00,0x0E], stableArr);
 
 // output.sendSysex([0xF0,0x00,0x20,0x2B,0x69,0x01,0x02,0xF7]);
 
@@ -335,13 +341,9 @@ output.sendSysex([], stableArr);
       };
 
       alert("Query finished!")
+    });
 
-
-
-    }
-  );
-
-},true);
+// },true);
 
 }
 
