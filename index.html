@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>SysexSending</title>
-  <script type="text/javascript" src="./webmidi.js"></script>
+  <script type="text/javascript" src="./js/webmidi.js"></script>
+  <link rel="shortcut icon" href="./ico/midi.ico">
   <style media="screen">
   body {
     font-size: 15px;
+    background-color: Silver;
   }
   form {
     width: 100%;
@@ -15,7 +17,7 @@
   fieldset {
     border-radius: 5px;
     text-align: left;
-    background-color: #eee;
+    background-color: #ddd;
   }
   legend {
     text-align: left;
@@ -23,14 +25,14 @@
     font-size: 16px;
   }
   button {
-    width: 90%;
+    width: 80%;
     height: 35px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #eee;
+    background-color: #FFCC66;
     color: blue;
-    border-radius: 4px;
-    margin-left: 50%;
+    border-radius: 7px;
+    margin-left: 30%;
   }
   button:hover {
     background-color: #339900;
@@ -41,7 +43,7 @@
   ol li {
     float: left;
     list-style: none;
-    width: 20%;
+    width: 18%;
     text-align: center;
     margin-bottom: 0.5%;
   }
@@ -74,6 +76,9 @@
     </li>
     <li>
       <button type="button" name="button">Send Current Setting</button>
+    </li>    
+    <li>
+      <button type="button" name="button">Query Serial Number</button>
     </li>
     <li>
       <button type="button" name="button">Close Device</button>
@@ -9183,6 +9188,6 @@
 //     sel[0].selectedIndex = "11";
 //     console.log("Has Clicked!");
 //   }, false); -->
-<script type="text/javascript" src="./main2.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

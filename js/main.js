@@ -6,10 +6,13 @@
   // var index = sel[0].selectedIndex;
   // var value = sel[0].options[index].value;
 
-  var connect = document.getElementsByTagName("button")[0];
-  var query = document.getElementsByTagName("button")[1];
-  var send = document.getElementsByTagName("button")[2];
-  var close = document.getElementsByTagName("button")[3];
+  var btns = document.getElementsByTagName("button");
+
+  var connect = btns[0];
+  var query = btns[1];
+  var send = btns[2];
+  var serial = btns[3];
+  var close = btns[4];
 
   connect.addEventListener('click', Connect, false);
 
@@ -24,7 +27,9 @@
 
   		query.addEventListener('click', Query, false);
 
-  		send.addEventListener('click', Send, false);
+      send.addEventListener('click', Send, false);
+
+  		serial.addEventListener('click', Serial, false);
 
       close.addEventListener('click', Refresh, false);
 
@@ -347,17 +352,77 @@ output.sendSysex([0x00,0x00,0x0E], stableArr);
       alert("Query finished!")
     });
 
+
+}
+
+
+
+
+function Serial(){
+
+
+  var output = WebMidi.getOutputById("123456789");
+  output = WebMidi.getOutputByName("Axiom Pro 25 Ext Out");
+  output = WebMidi.outputs[0];
+
+
+console.log(JSON.stringify(output,null,4));
+// output.sendSysex([0x00, 0x20, 0x2B], [0x69,0x01, 0x02]);
+
+
+output.sendSysex([], [0x7E,0x7F,0x06,0x01]);
+
+
+  var input = WebMidi.getInputByName("nanoKEY2 KEYBOARD");
+  input = WebMidi.getInputById("1809568182");
+  input = WebMidi.inputs[0];
+
+  
+    input.addListener('sysex', "all",
+    function (e) {
+
+      var returnaDataArray = Array.from(e.data);   // Array
+      // var selects = document.getElementsByTagName("select");
+
+
+      for (var i=0; i<returnaDataArray.length; i++) {
+        // selects[j].selectedIndex = returnaDataArray[i];
+        // console.log(i, returnaDataArray[i]);
+        // if (i=57) {
+        //   console.log(returnaDataArray[i]);
+        returnaDataArray[i] = returnaDataArray[i].toString(16).toUpperCase();
+        // };
+      };
+
+      alert(returnaDataArray);
+    });
+
 // },true);
 
 }
 
 
 
-// close.addEventListener('click', Refresh, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Refresh(){
   console.log("Inning...");
   window.location.reload();
+  alert("MIDI is already Closed!");
   
 }
 
