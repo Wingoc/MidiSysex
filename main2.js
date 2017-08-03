@@ -9,6 +9,7 @@
   var connect = document.getElementsByTagName("button")[0];
   var query = document.getElementsByTagName("button")[1];
   var send = document.getElementsByTagName("button")[2];
+  var close = document.getElementsByTagName("button")[3];
 
   connect.addEventListener('click', Connect, false);
 
@@ -24,6 +25,9 @@
   		query.addEventListener('click', Query, false);
 
   		send.addEventListener('click', Send, false);
+
+      close.addEventListener('click', Refresh, false);
+
 
   	},true);
 
@@ -181,7 +185,7 @@ output.sendSysex([], [0x00,0x00,0x0e,0x52,0x5e,0x02,0x00,0x00]);
 function Send(){
 
  
-query.removeEventListener('click', Query, false);
+// query.removeEventListener('click', Query, false);
 
 console.log("working?");
 
@@ -345,6 +349,16 @@ output.sendSysex([0x00,0x00,0x0E], stableArr);
 
 // },true);
 
+}
+
+
+
+// close.addEventListener('click', Refresh, false);
+
+function Refresh(){
+  console.log("Inning...");
+  window.location.reload();
+  
 }
 
 
