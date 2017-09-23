@@ -148,7 +148,7 @@
               <legend  class="section">Keybed&Ribbon</legend>
               <fieldset>
                 <legend>Volocity&Split Keybed</legend>
-                <label>Velo:</label>
+                <label>力度曲线:</label>
                 <select>
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -163,8 +163,8 @@
                 <span>
                   <label>Spt Mode:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">ON</option>
+                    <option value="1">OFF</option>
                   </select>
                   <label>Spt Point:</label>
                   <select class="" name="">
@@ -229,10 +229,10 @@
                   </select>
                 </span>
                 <span>
-                  <label for="">MIDI to DIN:</label>
+                  <label for="">MIDIOut开关:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">ON</option>
+                    <option value="1">OFF</option>
                   </select>
                 </span>
                 <span>
@@ -289,10 +289,10 @@
                     <option value="23">11</option>
                     <option value="24">12</option>
                   </select>
-                  <label for="">MIDI to DIN:</label>
+                  <label for="">MIDIOut开关:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">ON</option>
+                    <option value="1">OFF</option>
                   </select>
                   <label for="">Chanl:</label>
                   <select class="" name="">
@@ -355,14 +355,14 @@
                     <option value="13">13</option>
                     <option value="14">14</option>
                     <option value="15">15</option>
-                    <option value="16">16</option>
+                    <option value="16">All</option>
                   </select>
                 </span>
                 <span>
                   <label for="">Pt Direct:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">正向</option>
+                    <option value="1">反向</option>
                   </select>
                 </span>
               </fieldset>
@@ -372,8 +372,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">Null</option>
+                    <option value="2">Null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -506,7 +507,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -637,7 +638,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -792,16 +793,16 @@
 
               <fieldset>
                 <legend>Ribbon Mode Type</legend>
-                <label for="">Ribbon Control Def:</label>
+                <label for="">Control Def:</label>
                 <select class="" name="">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
+                  <option value="0">Ribbon1</option>
+                  <option value="1">Ribbon2</option>
+                  <option value="2">Ribbon3</option>
                 </select>
                 <label for="">Mode Type:</label>
                 <select class="" name="">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
+                  <option value="0">松开值返回0</option>
+                  <option value="1">松开值不变</option>
                 </select>
               </fieldset>
 
@@ -810,8 +811,8 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">Pitchbend</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -944,7 +945,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -1075,7 +1076,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -1232,8 +1233,8 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">Pitchbend</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -1366,7 +1367,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -1497,7 +1498,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -1654,8 +1655,8 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">Pitchbend</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -1788,7 +1789,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -1919,7 +1920,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -2078,8 +2079,8 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">Pitchbend</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -2212,7 +2213,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -2343,7 +2344,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -2507,8 +2508,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -2641,7 +2643,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -2772,7 +2774,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -2929,8 +2931,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -3063,7 +3066,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -3194,7 +3197,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -3351,8 +3354,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -3485,7 +3489,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -3616,7 +3620,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -3773,8 +3777,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -3907,7 +3912,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -4038,7 +4043,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -4195,8 +4200,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -4329,7 +4335,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -4460,7 +4466,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -4617,8 +4623,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -4751,7 +4758,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -4882,7 +4889,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -5039,8 +5046,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -5173,7 +5181,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -5304,7 +5312,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -5461,8 +5469,9 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
+                    <option value="0">Controller</option>
+                    <option value="1">null</option>
+                    <option value="2">null</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -5595,7 +5604,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data2：</label>
+                  <label for="">最小值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -5726,7 +5735,7 @@
                     <option value="126">126</option>
                     <option value="127">127</option>
                   </select>
-                  <label for="">Data3：</label>
+                  <label for=""><br/>最大值：</label>
                   <select class="" name="">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -5898,11 +5907,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -6318,71 +6327,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -6391,11 +6400,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -6811,71 +6820,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -6884,11 +6893,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -7304,71 +7313,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -7377,11 +7386,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -7797,71 +7806,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -7870,11 +7879,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>                    
-                    <option value="4">4</option>                    
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>                    
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -8290,71 +8299,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -8363,11 +8372,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -8783,71 +8792,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -8856,11 +8865,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -9276,71 +9285,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
@@ -9349,11 +9358,11 @@
                 <span>
                   <label for="">&nbsp;Type：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="0">Note</option>
+                    <option value="1">CC Toggle</option>
+                    <option value="2">CC Momentary</option>
+                    <option value="3">Program Change</option>
+                    <option value="4">All Notes Off</option>
                   </select>
                   <label for="">Data1：</label>
                   <select class="" name="">
@@ -9769,71 +9778,71 @@
                   </select>
                   <label for="">Color1:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color2：</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color3:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                   <label for="">Color4:</label>
                   <select class="" name="">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
+                    <option value="0">关</option>
+                    <option value="1">黄绿色</option>
+                    <option value="2">绿色</option>
+                    <option value="3">海蓝宝石</option>
+                    <option value="4">青色</option>
+                    <option value="5">蔚蓝</option>
+                    <option value="6">蓝色</option>
+                    <option value="7">紫罗兰</option>
+                    <option value="8">品红</option>
+                    <option value="9">玫瑰红</option>
+                    <option value="10">红色</option>
+                    <option value="11">橙色</option>
+                    <option value="12">黄色</option>
+                    <option value="13">白色</option>
                   </select>
                 </span>
               </fieldset>
