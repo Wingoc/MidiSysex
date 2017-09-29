@@ -107,7 +107,7 @@ function Send(){
 function Serial(){
 
   var output = WebMidi.outputs[0];
-  output.sendSysex([], [0x7E,0x7F,0x06,0x01]);
+  output.sendSysex([], [0x7E,0x00,0x06,0x01]);
 }
 
 
