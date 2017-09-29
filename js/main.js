@@ -47,6 +47,11 @@ function Connect(){
       alert(returnaDataArray);
     }else {
       var selects = document.getElementsByTagName("select");
+      var prefix = [];
+      for (var m=0; m<26; m++){
+        prefix.push(returnaDataArray[m]);
+      }
+      console.log(prefix);
       for (var i=26, j=0; i<returnaDataArray.length-1; i++) {
         selects[j].selectedIndex = returnaDataArray[i];
         j++;
